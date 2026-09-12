@@ -1,0 +1,61 @@
+{
+  "name": "@rahul_dadhich15/id-toolkit",
+  "version": "0.1.0",
+  "description": "A lightweight, dependency-free TypeScript toolkit for UUIDs, short IDs, and secure identifiers.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahuldadhich15/id-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rahuldadhich15/id-toolkit/issues"
+  },
+  "homepage": "https://github.com/rahuldadhich15/id-toolkit#readme",
+  "keywords": [
+    "uuid",
+    "uuid-v4",
+    "uuid-v7",
+    "uuid-generator",
+    "uuid-validator",
+    "short-id",
+    "secure-id",
+    "id-generator",
+    "identifier",
+    "random-id",
+    "crypto",
+    "typescript",
+    "javascript",
+    "utilities"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run clean && tsup src/index.ts --format esm,cjs && tsc",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^3.0.0"
+  }
+}
