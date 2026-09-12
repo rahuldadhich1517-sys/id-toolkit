@@ -17,17 +17,6 @@
     "dist"
   ],
   "sideEffects": false,
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rahuldadhich15/id-toolkit.git"
-  },
-  "bugs": {
-    "url": "https://github.com/rahuldadhich15/id-toolkit/issues"
-  },
-  "homepage": "https://github.com/rahuldadhich15/id-toolkit#readme",
   "keywords": [
     "uuid",
     "uuid-v4",
@@ -45,6 +34,17 @@
     "utilities"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahuldadhich1517-sys/id-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rahuldadhich1517-sys/id-toolkit/issues"
+  },
+  "homepage": "https://github.com/rahuldadhich1517-sys/id-toolkit#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "npm run clean && tsup src/index.ts --format esm,cjs && tsc",
     "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
@@ -53,7 +53,7 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@types/node": "^22.20.2",
+    "@types/node": "^24.0.0",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0",
     "vitest": "^3.0.0"
