@@ -6,6 +6,8 @@ A lightweight, dependency-free TypeScript toolkit for generating identifiers, ra
 [![npm downloads](https://img.shields.io/npm/dm/@rahul_dadhich15/id-toolkit.svg)](https://www.npmjs.com/package/@rahul_dadhich15/id-toolkit)
 [![CI](https://github.com/rahuldadhich1517-sys/id-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/rahuldadhich1517-sys/id-toolkit/actions/workflows/ci.yml)
 [![License](https://img.shields.io/github/license/rahuldadhich1517-sys/id-toolkit)](https://github.com/rahuldadhich1517-sys/id-toolkit)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6.svg)](https://www.typescriptlang.org/)
+[![Zero Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/@rahul_dadhich15/id-toolkit)
 
 Generate UUIDs, validate UUIDs, create compact short IDs, generate NanoIDs, produce sortable ULIDs, generate cryptographically secure identifiers, brandable business names, random numbers, random strings, words, names, and usernames — all with a simple, type-safe TypeScript API.
 
