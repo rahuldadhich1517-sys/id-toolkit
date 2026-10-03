@@ -1,6 +1,6 @@
 {
   "name": "@rahul_dadhich15/id-toolkit",
-  "version": "0.2.1",
+  "version": "0.2.0",
   "description": "A lightweight, dependency-free TypeScript toolkit for UUIDs, short IDs, NanoIDs, ULIDs, secure tokens, random numbers, strings, words, names, and usernames.",
   "type": "module",
   "main": "./dist/index.cjs",
