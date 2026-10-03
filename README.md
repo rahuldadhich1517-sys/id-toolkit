@@ -1,15 +1,23 @@
 # ID Toolkit
 
-A lightweight, dependency-free TypeScript toolkit for generating identifiers, random numbers, strings, words, names, and usernames.
+A lightweight, dependency-free TypeScript toolkit for generating secure identifiers, UUIDs, random strings, words, names, usernames, and safe numeric values.
 
 [![npm version](https://img.shields.io/npm/v/@rahul_dadhich15/id-toolkit.svg)](https://www.npmjs.com/package/@rahul_dadhich15/id-toolkit)
 [![npm downloads](https://img.shields.io/npm/dm/@rahul_dadhich15/id-toolkit.svg)](https://www.npmjs.com/package/@rahul_dadhich15/id-toolkit)
-[![CI](https://github.com/rahuldadhich1517-sys/id-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/rahuldadhich1517-sys/id-toolkit/actions/workflows/ci.yml)
-[![License](https://img.shields.io/github/license/rahuldadhich1517-sys/id-toolkit)](https://github.com/rahuldadhich1517-sys/id-toolkit)
+[![License](https://img.shields.io/npm/l/@rahul_dadhich15/id-toolkit.svg)](https://www.npmjs.com/package/@rahul_dadhich15/id-toolkit)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6.svg)](https://www.typescriptlang.org/)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/@rahul_dadhich15/id-toolkit)
+[![Modules](https://img.shields.io/badge/modules-ESM%20%2B%20CommonJS-blue.svg)](https://www.npmjs.com/package/@rahul_dadhich15/id-toolkit)
 
 Generate UUIDs, validate UUIDs, create compact short IDs, generate NanoIDs, produce sortable ULIDs, generate cryptographically secure identifiers, brandable business names, random numbers, random strings, words, names, and usernames — all with a simple, type-safe TypeScript API.
+
+## Why use this package?
+
+- Zero runtime dependencies
+- Secure random generation using Node.js `crypto`
+- Works in both ESM and CommonJS projects
+- TypeScript-first API with clear option objects
+- Small, focused utilities for app and backend use cases
 
 ---
 
@@ -41,6 +49,8 @@ Generate UUIDs, validate UUIDs, create compact short IDs, generate NanoIDs, prod
 ```bash
 npm install @rahul_dadhich15/id-toolkit
 ```
+
+> Works with Node.js environments that support the built-in `crypto` module.
 
 ---
 
@@ -120,7 +130,6 @@ const {
   generateBusinessName,
 } = require("@rahul_dadhich15/id-toolkit");
 ```
-
 ---
 
 # 1. UUID Generator
@@ -739,166 +748,6 @@ const { uuidV4, generateNanoId } = require("@rahul_dadhich15/id-toolkit");
 
 ---
 
-# Project Structure
-
-```text
-id-toolkit/
-├── src/
-│   ├── business-name/
-│   │   ├── data/
-│   │   │   └── components.ts
-│   │   ├── business-name.ts
-│   │   └── index.ts
-│   ├── nanoid/
-│   │   ├── nanoid.ts
-│   │   └── index.ts
-│   ├── random-name/
-│   │   ├── data/
-│   │   │   └── names.ts
-│   │   ├── random-name.ts
-│   │   └── index.ts
-│   ├── random-number/
-│   │   ├── random-number.ts
-│   │   └── index.ts
-│   ├── random-string/
-│   │   ├── random-string.ts
-│   │   └── index.ts
-│   ├── random-word/
-│   │   ├── data/
-│   │   │   └── words.ts
-│   │   ├── random-word.ts
-│   │   └── index.ts
-│   ├── secure-id/
-│   │   ├── secure-id.ts
-│   │   └── index.ts
-│   ├── short-id/
-│   │   ├── short-id.ts
-│   │   └── index.ts
-│   ├── ulid/
-│   │   ├── ulid.ts
-│   │   └── index.ts
-│   ├── username-generate/
-│   │   ├── data/
-│   │   │   └── words.ts
-│   │   ├── username-generate.ts
-│   │   └── index.ts
-│   ├── uuid-generator/
-│   │   ├── uuid-generator.ts
-│   │   └── index.ts
-│   ├── uuid-validator/
-│   │   ├── uuid-validator.ts
-│   │   └── index.ts
-│   └── index.ts
-│
-├── tests/
-│   ├── business-name.test.ts
-│   ├── nanoid.test.ts
-│   ├── random-name.test.ts
-│   ├── random-number.test.ts
-│   ├── random-string.test.ts
-│   ├── random-word.test.ts
-│   ├── secure-id.test.ts
-│   ├── short-id.test.ts
-│   ├── ulid.test.ts
-│   ├── username-generate.test.ts
-│   ├── uuid-generator.test.ts
-│   └── uuid-validator.test.ts
-│
-├── .github/
-│   └── workflows/
-│       └── ci.yml
-│
-├── README.md
-├── LICENSE
-├── package.json
-├── package-lock.json
-├── tsconfig.json
-└── .gitignore
-```
-
----
-
-# Development
-
-Clone the repository:
-
-```bash
-git clone https://github.com/rahuldadhich1517-sys/id-toolkit.git
-cd id-toolkit
-npm install
-```
-
----
-
-# Testing
-
-The project uses [Vitest](https://vitest.dev/) for automated testing:
-
-```bash
-npm run test:run
-```
-
-Run in watch mode:
-
-```bash
-npm test
-```
-
----
-
-# Build
-
-Compile dual ESM/CJS bundles and declaration files:
-
-```bash
-npm run build
-```
-
-Verify npm tarball contents:
-
-```bash
-npm pack --dry-run
-```
-
----
-
-# CI
-
-Continuous integration is automated via GitHub Actions on every push and pull request:
-
-```text
-Checkout repository
-        ↓
-Setup Node.js
-        ↓
-Install dependencies (npm ci)
-        ↓
-Type check (npm run typecheck)
-        ↓
-Run tests (npm run test:run)
-        ↓
-Build package (npm run build)
-        ↓
-Validate npm package (npm pack --dry-run)
-```
-
-Repository:
-https://github.com/rahuldadhich1517-sys/id-toolkit
-
----
-
-# Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feat/amazing-feature`)
-3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
-4. Push to the branch (`git push origin feat/amazing-feature`)
-5. Open a Pull Request
-
----
-
 # License
 
-MIT © 2026 [Rahul Dadhich](https://github.com/rahuldadhich1517-sys)
+MIT © [Rahul Dadhich](https://github.com/rahuldadhich1517-sys)
