@@ -51,7 +51,7 @@
   },
   "homepage": "https://github.com/rahuldadhich1517-sys/id-toolkit#readme",
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "build": "npm run clean && tsup src/index.ts --format esm,cjs && tsc",
