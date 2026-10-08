@@ -50,8 +50,8 @@
     "url": "https://github.com/rahuldadhich1517-sys/id-toolkit/issues"
   },
   "homepage": "https://github.com/rahuldadhich1517-sys/id-toolkit#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+ "publishConfig": {
+  "access": "public"
   },
   "scripts": {
     "build": "npm run clean && tsup src/index.ts --format esm,cjs && tsc",
